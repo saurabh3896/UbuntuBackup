@@ -5,8 +5,7 @@ syntax enable
 set number
 set showmatch
 set clipboard=unnamedplus
-" autocmd VimEnter * NERDTree
-" autocmd VimEnter * wincmd p
+set hlsearch
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -20,6 +19,11 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'valloric/youcompleteme'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'tpope/vim-fugitive'
+
+autocmd VimEnter * NERDTree | wincmd p
 
 call vundle#end()            " required
 filetype plugin indent on    " required
